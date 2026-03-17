@@ -9,7 +9,7 @@ If the paragraph is a number, interpret that as a scene number corresponding to 
 If the paragraph is script content, output a row in the spreadsheet with the following columns:
 1) a true/false column entitled "Done", with the default value set to false;
 2) a "Scene" column containing the scene number, taken from the script;
-3) a "Shot" column containing the shot identifier, default set to "A:";
+3) a "Shot" column containing the shot identifier, default set to "A";
 4) a "Media" column indicating the type of media to be shot (video, image, or animation) with default set to 'video';
 5) a "Set" column indicating the location where shooting will take place (with default set to blank)
 6) a "Description" field describing the content to be shot;
