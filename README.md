@@ -1,0 +1,20 @@
+AI-generated Python script that will convert a formatted script into a shotlist template in .csv format, that can be imported as a spreadsheet into other application software.
+
+The script is formatted in markdown format, as in the file `example_script.md`.
+
+For each paragraph encountered in the script:
+
+If the paragraph is formatted a heading, output a row in the script with the content as the heading in the first column.
+
+If the paragraph is a number, interpret that as a scene number corresponding to the script content in the paragraph immediately following.
+
+If the paragraph is script content, output a row in the spreadsheet with the following columns:
+1) a true/false column entitled "Done", with the default value set to false;
+2) a "Scene" column containing the scene number, taken from the script;
+3) a "Shot" column containing the shot identifier, default set to "A";
+4) a "Media" column indicating the type of media to be shot (video, image, or animation) with default set to 'video';
+5) a "Set" column indicating the location where shooting will take place (with default set to blank)
+6) a "Description" field describing the content to be shot;
+7) a "File" column indicating the media file on disk that contains the content;
+8) a "Script" field containing the text from the script (escaped appropriately according to the constraints of CSV files)
+9) a blank "Notes" field for entering in director's notes.
